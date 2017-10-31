@@ -1,0 +1,16 @@
+<?php
+/*
+* Created by: Nick Moore
+* Description: My portfolio Site
+*/
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Nick Moore | Portfolio</title>
+    </head>
+    <body>
+        <h1>Welcome to my site!</h1>
+    </body>
+</html>
