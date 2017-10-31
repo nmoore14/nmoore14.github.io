@@ -3,7 +3,12 @@ html {
     background-color: #757575;
 }
 
+/* Navbar Styling */
 .navbar-brand {
     font-family: 'Muli', sans-serif;
     font-size: 2rem;
+}
+
+.navbar-nav .nav-item {
+    background-color: white;
 }
