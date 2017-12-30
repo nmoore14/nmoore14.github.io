@@ -1,6 +1,9 @@
 /* font-family: 'Muli', sans-serif; */
 html {
     background-image: url("../images/milkyway-1.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Navbar Styling */
