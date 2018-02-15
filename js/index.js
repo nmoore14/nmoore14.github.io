@@ -1,3 +1,11 @@
+var menuAction = document.getElementById("navAction");
+
+menuAction.addEventListener("click", searchClicked, false);
+
+function searchClicked() {
+    menuAction.classList.toggle('active');
+};
+
 $(document).ready(function(){
     $("#homeLink").addClass("active");
     $("#aboutLink").click(function(){
