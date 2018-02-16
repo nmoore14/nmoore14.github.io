@@ -121,6 +121,13 @@ img {
     height: auto;
 }
 
+.profilePic {
+    background-image: url("../images/nick.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+}
+
 .profileAbout .display-2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
