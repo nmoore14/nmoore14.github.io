@@ -5,7 +5,7 @@ html {
 
 /* Navbar Styling */
 .navbar {
-	background-color: rgba(4, 4, 4, 0.75)!important;
+	background-color: #00B1B3!important;
 }
 
 .navbar-brand {
@@ -13,6 +13,13 @@ html {
 	font-size: 5rem;
     font-weight: lighter;
     color: white!important;
+}
+
+.navbar-brand small {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-left: -1rem;
 }
 
 .dropdown {
@@ -71,34 +78,17 @@ html {
 	margin: 0 auto;
 }
 
-.searchBox {
-	background-color: rgba(0, 0, 0, 0);
-	color: white;
-	border: none;
-	border-radius: 0;
-	border-bottom: .13rem solid white;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 4rem;
-	font-weight: 300;
+.siteLinks {
+    margin: 0 auto;
 }
 
-.searchBox:focus {
-	background-color: rgba(0, 0, 0, 0);
-	color: white;
-	border: none;
-	border-radius: 0;
-	border-bottom: .13rem solid white;
+.nav-link {
+    width: 30%;
+    float: left;
 }
 
-.searchSub {
-	background-color: rgba(0, 0, 0, 0);
-	border: .13rem solid #e6e6e6;
-	color: #e6e6e6;
-	cursor: pointer;
-}
-
-.searchSub:hover {
-	background-color: #e6e6e6;
-	color: #0b1026;
+.nav-link li {
+    text-align: center;
+    list-style-type: none;
 }
 
