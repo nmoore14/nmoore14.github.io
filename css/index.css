@@ -216,6 +216,7 @@ body {
     margin-top: 5rem;
     background-color: white;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .webProjectsGallery .display-1 {
@@ -234,4 +235,22 @@ body {
 
 .subtitleDisplay-2 {
     margin-top: 3rem;  
+}
+
+/* Digital Art Gallery Styling */
+.digitalArtGallery {
+    margin-top: 5rem;
+    background-color: #e6e6e6;
+    padding-top: 2rem;
+}
+
+.digitalArtGallery .display-1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sOriginal {
+    float: left;
 }
