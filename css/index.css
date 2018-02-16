@@ -1,4 +1,8 @@
-/* font-family: 'Raleway', sans-serif; */
+/* 
+    font-family: 'Raleway', sans-serif; 
+    font-family: 'Roboto', sans-serif;
+*/
+
 html {
     background-color: #e6e6e6;
 }
@@ -115,12 +119,24 @@ img {
     border-radius: 4rem;
 }
 
+.profileAbout .display-2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;
+}
+
 /* Middle Content Styling */
 .middleContent {
-    margin-top: 15rem;
+    margin-top: 5rem;
     border-radius: 2rem;
     background-color: #e6e6e6;
     padding: 3rem;
+}
+
+.middleContent .display-1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: lighter;
 }
 
 .middleContent .row {
@@ -138,11 +154,14 @@ img {
 }
 
 .card-header-pills li > a {
-    color: #6CDEF3;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
 }
 
 .nav-pills > li > a.active {
-    background-color: #13778A!important;
+    background-color: #00B1B3!important;
 }
 
 .card-header {
@@ -153,10 +172,37 @@ img {
 
 .card-body {
     background-color: white;
+    border-radius: 2rem;
 }
 
 .myActive {
     background-color: #b8b8b8;
 }
 
+#featuredSelection {
+    height: 700px;
+    background-image: url("../images/eCommerce_1_FINAL.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+    color: white;
+}
 
+#newSelection {
+    height: 700px;
+    background-image: url("../images/Moore_Typeogrophy_final.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: right;
+    color: white;
+}
+
+#pickSelection {
+    height: 700px;
+    background-image: url("../images/Isabella_16_FINAL.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: right;
+    color: white;
+}
