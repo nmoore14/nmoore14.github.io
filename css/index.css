@@ -3,6 +3,10 @@ html {
     background-color: #e6e6e6;
 }
 
+body {
+    background-color: #e6e6e6;
+}
+
 /* Navbar Styling */
 .navbar {
 	background-color: #00B1B3!important;
@@ -99,14 +103,28 @@ html {
     text-decoration: none;
 }
 
+/* Top Content Styling */
+.topContent {
+    margin-top: 10rem;
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+img {
+    border-radius: 4rem;
+}
+
 /* Middle Content Styling */
 .middleContent {
     margin-top: 15rem;
-    border-radius: .5rem;
+    border-radius: 2rem;
+    background-color: #e6e6e6;
+    padding: 3rem;
 }
 
 .middleContent .row {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #e6e6e6;
 }
 
 .middleContent h3 {
