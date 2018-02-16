@@ -115,12 +115,6 @@ body {
     padding-bottom: 5rem;
 }
 
-img {
-    border-radius: 4rem;
-    width: 100%;
-    height: auto;
-}
-
 .profilePic {
     background-image: url("../images/nick.png");
     background-size: cover;
@@ -214,4 +208,29 @@ img {
     background-position: center;
     text-align: right;
     color: white;
+}
+
+/* Web Project Gallery Styling */
+.webProjectsGallery {
+    margin-top: 5rem;
+    background-color: white;
+    padding-top: 2rem;
+}
+
+.webProjectsGallery .display-1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.webProjectsGallery .subtitleDisplay, .subtitleDisplay-2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.subtitleDisplay-2 {
+    margin-top: 3rem;  
 }
