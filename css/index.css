@@ -119,6 +119,7 @@ body {
     background-image: url("../images/nick.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     border-radius: 2rem;
 }
 
