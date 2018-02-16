@@ -117,6 +117,8 @@ body {
 
 img {
     border-radius: 4rem;
+    width: 100%;
+    height: auto;
 }
 
 .profileAbout .display-2 {
