@@ -109,7 +109,7 @@ body {
 
 /* Top Content Styling */
 .topContent {
-    margin-top: 10rem;
+    margin-top: 8rem;
     background-color: white;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -253,4 +253,19 @@ body {
 
 .sOriginal {
     float: left;
+}
+
+/* Photography Gallery Styling */
+.photographyGallery {
+     margin-top: 5rem;
+    background-color: white;;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.photographyGallery .display-1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    text-align: center;
 }
