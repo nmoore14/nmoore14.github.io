@@ -74,21 +74,71 @@ html {
     transform: rotateY(180deg);
 }
 
-.form-controls {
-	margin: 0 auto;
-}
-
 .siteLinks {
     margin: 0 auto;
 }
 
-.nav-link {
+.siteLinks .nav-link {
     width: 30%;
     float: left;
+    color: white;
 }
 
-.nav-link li {
-    text-align: center;
+.siteLinks .nav-link li {
     list-style-type: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    border-radius: .5rem;
 }
+
+.siteLinks .nav-link li:hover {
+    background-color: rgba(0, 0, 0, .25);
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+/* Middle Content Styling */
+.middleContent {
+    margin-top: 15rem;
+    border-radius: .5rem;
+}
+
+.middleContent .row {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.middleContent h3 {
+    padding-bottom: .5rem;
+    margin-top: .25rem;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.card-header-pills li > a {
+    color: #6CDEF3;
+}
+
+.nav-pills > li > a.active {
+    background-color: #13778A!important;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    border: none;
+}
+
+.card-body {
+    background-color: white;
+}
+
+.myActive {
+    background-color: #b8b8b8;
+}
+
 
