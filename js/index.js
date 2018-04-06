@@ -7,6 +7,7 @@ function searchClicked() {
 };
 
 $(document).ready(function () {
+    alert("Please excuse my mess. There's a new site on the way, thank you for your patience.");
     $("#newSelection").hide();
     $("#pickSelection").hide();
     $("#newLink").click(function () {
