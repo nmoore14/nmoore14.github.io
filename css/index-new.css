@@ -19,10 +19,6 @@ body {
 .grid-container #sideNav {
     grid-area: sideNav;
     background-color: #363636;
-    font-family: 'Yantramanav', sans-serif;
-    font-weight: 300;
-    text-decoration: none;
-    color: white;
     width: 15rem;
     position: fixed;
 }
@@ -38,8 +34,22 @@ body {
 
 .sideNav ul {
     list-style-type: none;
+    padding-right: 1rem;
+}
+
+.sideNav ul a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: right;
 }
 
 .content {
     grid-area: content;
+    background-image: url("../../images/multicolor-splash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: sticky;
 }
