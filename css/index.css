@@ -1,5 +1,5 @@
-/* 
-    font-family: 'Raleway', sans-serif; 
+/*
+    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
 */
 
@@ -64,22 +64,23 @@ body {
 }
 
 .navbar-toggler {
-	position: sticky;
-	height: 4rem;
-    width: auto;
-    font-size: 3rem;
-	background-color: #e6e6e6!important;
-	color: #0b1026!important;
-	transition: all .45s ease;
-	cursor: pointer;
+  position: sticky;
+  height: 2.5rem;
+  width: auto;
+  font-size: 2rem;
+  background-color: #e6e6e6!important;
+  color: #0b1026!important;
+  transition: all .45s ease;
+  cursor: pointer;
+  padding: 0 .5rem 0 .5rem;
 }
 
 .navbar-toggler.active {
-	border-radius: 50%;
-	color: white!important;
-	background-color: #0b1026!important;
-    border: .13rem solid white;
-    transform: rotateY(180deg);
+  border-radius: 50%;
+  color: white!important;
+  background-color: #0b1026!important;
+  border: .13rem solid white;
+  transform: rotateY(180deg);
 }
 
 .siteLinks {
@@ -234,7 +235,7 @@ body {
 }
 
 .subtitleDisplay-2 {
-    margin-top: 3rem;  
+    margin-top: 3rem;
 }
 
 /* Digital Art Gallery Styling */

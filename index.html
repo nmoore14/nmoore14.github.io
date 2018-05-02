@@ -1,21 +1,16 @@
-<?php
-/*
-* Created by: Nick Moore
-* Description: My portfolio Site
-*/
-?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <title>Nick Moore | Portfolio</title>
 
         <script src="https://use.fontawesome.com/4da6eb03df.js"></script>
 
-        <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
         <link rel="stylesheet" href="css/index.css" />
+
     </head>
     <body>
         <div class="container header" id="header">
@@ -89,105 +84,12 @@
                 </div>
             </div>
         </div>
-        <div class="container middleContent">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-12" id="featuredItem">
-                    <h1 class="display-1">My Favorites</h1>
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <ul class="nav nav-pills card-header-pills">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#featuredSelection" id="featuredLink">Web Project</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#newSelection" id="newLink">Digital Art</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#pickSelection" id="pickLink">Photography</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-body" id="featuredSelection">
-                           <!-- Holder for a background image -->
-                        </div>
-                        <div class="card-body" id="newSelection">
-                            <!-- Holder for a background image -->
-                        </div>
-                        <div class="card-body" id="pickSelection">
-                            <!-- Holder for a background image -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid webProjectsGallery" id="webProjectArea">
-            <h1 class="display-1">Web Projects</h1>
-            <h4 class="subtitleDisplay">eCommerce Project</h4>
-            <div class="row eCommerceProject">
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid eCommerce1" src="images/eCommerce_1_FINAL.jpg" alt="First image of my eCommerce Project">
-                </div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid eCommerce1" src="images/eCommerce_2_FINAL.jpg" alt="Second image of my eCommerce Project">
-                </div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid eCommerce1" src="images/eCommerce_3_FINAL.jpg" alt="Third image of my eCommerce Project">
-                </div>
-            </div>
-            <h4 class="subtitleDisplay-2">Task Scheduler Project</h4>
-            <div class="row taskScheduler">
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <img class="img-fluid ts1" src="images/task_scheduler_1_FINAL.jpg" alt="First image of my Task Scheduler Project">
-                </div>
-                <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                    <img class="img-fluid ts1" src="images/task_scheduler_2_FINAL.jpg" alt="Second image of my Task Scheduler Project">
-                </div>
-            </div>
-            <h4 class="subtitleDisplay-2">Custom Web Gallery</h4>
-            <div class="row webGallery">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <img class="img-fluid ts1" src="images/webGallery_FINAL.jpg" alt="Image of web gallery site">
-                    <a href="http://s1076596.instanturl.net/patterngalleryphp/">See it LIVE!</a>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid digitalArtGallery" id="digitalArtArea">
-            <h1 class="display-1">Digital Art</h1>
-            <div class="row">
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid" src="images/Hurricane Cycles_Final Concept-1.jpg" alt="Logo designs for Hurricane Cycles">
-                </div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid" src="images/Moore_Typeogrophy_final.jpg" alt="Image created out of text">
-                </div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid" src="images/moore_smith_final.jpg" alt="Recolored image of a soldier" width="45%">
-                    <img class="img-fluid sOrignal" src="images/smith-1.jpg" alt="Original image of a soldier" width="45%">
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid photographyGallery" id="photographyArea">
-            <h1 class="display-1">Photography</h1>
-            <div class="row">
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid" src="images/Isabella_16_FINAL.jpg" alt="Picture of little girl 1" width="50%" style="float:right;">
-                </div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid" src="images/A_I_20_FINAL.jpg" alt="Image of siblings">
-                </div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                    <img class="img-fluid" src="images/Isabella_13_FINAL.jpg" alt="Picture of little girl 2" width="50%">
-                </div>
-            </div>
-        </div>
+
 
         <!-- End of file to help with load times -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="bootstrap/jquery.min.js"><\/script>')</script>
-        <script src="bootstrap/popper.min.js"></script>
-        <script src="bootstrap/bootstrap.min.js"></script>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="bootstrap/ie10-viewport-bug-workaround.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="js/index.js"></script>
     </body>
 </html>
