@@ -1,0 +1,45 @@
+/*
+*   font-family: 'Yantramanav', sans-serif;
+*/
+html {
+    background-color: #e6e6e6;
+    font-size: 12pt;
+}
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'sideNav content content content content content content'
+}
+
+.grid-container #sideNav {
+    grid-area: sideNav;
+    background-color: #363636;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    width: 15rem;
+    position: fixed;
+}
+
+#sideNav img {
+    width: 13rem;
+    height: auto;
+    padding: 0;
+    margin: .5rem 1rem 0rem 1rem;
+    border-radius: .25rem;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+.sideNav ul {
+    list-style-type: none;
+}
+
+.content {
+    grid-area: content;
+}
