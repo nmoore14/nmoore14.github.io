@@ -16,12 +16,13 @@ body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    z-index: -100;
 }
 
 .grid-container {
     display: grid;
     grid-template-areas:
-    'sideNav content content content content content content'
+    'sideNav content content content content content';
 }
 
 .grid-container #sideNav {
@@ -29,6 +30,7 @@ body {
     background-color: rgba(54, 54, 54, .95);
     width: 15rem;
     position: fixed;
+    z-index: 101;
 }
 
 #sideNav img {
@@ -56,5 +58,19 @@ body {
 
 .content {
     grid-area: content;
-    position: sticky;
+    display: subgrid;
+    grid-template-areas:
+    'welcome welcome welcome welcome welcome welcome'
+    'about about about about about about'
+    'projects projects projects projects projects projects'
+    'contact contact contact contact contact contact';
+    z-index: 100;
+    margin-left: 15.5rem;
+}
+
+.welcome {
+    grid-area: welcome;
+    background-color: rgba(0, 0, 0, .75);
+    color: #e6e6e6;
+    margin-top: 5rem;
 }
