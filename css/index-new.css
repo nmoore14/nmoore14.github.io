@@ -72,5 +72,20 @@ body {
     grid-area: welcome;
     background-color: rgba(0, 0, 0, .75);
     color: #e6e6e6;
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    margin-left: 0;
+    padding: 0 .13rem 0 .13rem;
+}
+
+.display-2 {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 5rem;
+    font-weight: lighter;
+    margin-left: .5rem;
+}
+
+.display-2 small {
+    font-size: 2rem;
 }
