@@ -27,7 +27,7 @@ body {
 
 .grid-container #sideNav {
     grid-area: sideNav;
-    background-color: rgba(54, 54, 54, .95);
+    background-color: rgba(10, 31, 42, .75);
     width: 15rem;
     position: fixed;
     z-index: 101;
@@ -70,7 +70,7 @@ body {
 
 .welcome {
     grid-area: welcome;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: rgba(30, 40, 60, .5);
     color: #e6e6e6;
     margin-top: 2rem;
     margin-right: 1rem;
