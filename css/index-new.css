@@ -2,8 +2,10 @@
 *   font-family: 'Yantramanav', sans-serif;
 */
 html {
-    background-color: #e6e6e6;
     font-size: 12pt;
+    background-image: url('../images/Grey2Blue_LowPoly.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -27,7 +29,7 @@ body {
 
 .grid-container #sideNav {
     grid-area: sideNav;
-    background-color: rgba(10, 31, 42, .75);
+    background-color: rgba(31, 49, 233, .5);
     width: 15rem;
     position: fixed;
     z-index: 101;
@@ -70,10 +72,10 @@ body {
 
 .welcome {
     grid-area: welcome;
-    background-color: rgba(30, 40, 60, .5);
+    background-color: rgba(31, 49, 233, .5);
     color: #e6e6e6;
-    margin-top: 2rem;
-    margin-right: 1rem;
+    margin-top: -3rem;
+    margin-right: 5rem;
     border-radius: 1rem;
     margin-left: 0;
     padding: 0 .13rem 0 .13rem;
