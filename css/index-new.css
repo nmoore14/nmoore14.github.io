@@ -91,3 +91,9 @@ body {
 .display-2 small {
     font-size: 2rem;
 }
+
+.hover {
+    background-color: rgba(100, 100, 100, .5);
+    text-align: left;
+    color: white;
+}
