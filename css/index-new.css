@@ -29,7 +29,7 @@ body {
 
 .grid-container #sideNav {
     grid-area: sideNav;
-    background-color: rgba(31, 49, 233, .5);
+    background-color: rgb(230, 230, 235);
     width: 15rem;
     position: fixed;
     z-index: 101;
@@ -51,7 +51,7 @@ body {
 
 .sideNav ul a {
     text-decoration: none;
-    color: white;
+    color: rgb(5, 25, 50);
     font-family: 'Yantramanav', sans-serif;
     font-weight: 300;
     font-size: 2rem;
@@ -72,8 +72,8 @@ body {
 
 .welcome {
     grid-area: welcome;
-    background-color: rgba(31, 49, 233, .5);
-    color: #e6e6e6;
+    background-color: rgb(230, 230, 235);
+    color: rgb(5, 25, 50);
     margin-top: -3rem;
     margin-right: 5rem;
     border-radius: 1rem;
