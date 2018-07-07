@@ -93,7 +93,8 @@ body {
 }
 
 .hover {
-    background-color: rgba(100, 100, 100, .5);
-    text-align: left;
-    color: white;
+    background-color: rgba(5, 25, 60, 1);
+    text-align: center;
+    color: rgb(230, 230, 235);
+    border-radius: 1rem;
 }
