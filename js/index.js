@@ -7,7 +7,7 @@ function searchClicked() {
 };
 
 $(document).ready(function () {
-    alert("Please excuse my mess. The new site is now located at <a href='nmoore14.netlify.com'>nmoore14.netlify.com</a>.);
+    alert("Please excuse my mess. The new site is now located at <a href='nmoore14.netlify.com'>nmoore14.netlify.com</a>.");
     $("#newSelection").hide();
     $("#pickSelection").hide();
     $("#newLink").click(function () {
