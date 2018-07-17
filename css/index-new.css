@@ -98,3 +98,13 @@ body {
     color: rgb(230, 230, 235);
     border-radius: 1rem;
 }
+
+.about .sj-quote {
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: right;
+	margin-top: -3rem;
+	margin-right: 9rem;
+}
