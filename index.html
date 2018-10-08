@@ -13,13 +13,11 @@
         <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Maitree" rel="stylesheet">
 
         <!-- JavaScript Links -->
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
-        <script src="./js/index.js"></script>
     </head>
-    <body id="app">
-        {{ message }}
+    <body>
         <nav id="nav-wrapper">
             <div id="nav-left">
                 <a href="index.html">
@@ -40,14 +38,19 @@
             <div id="content-wrapper">
                 <div id="content-left">
                     <h3 id="pro-header">Professional</h3>
+                    {{ message }}
                 </div>
                 <div id="content-right">
                     <h3 id="fun-header">For FUN</h3>
+                    {{ message2 }}
                 </div>
             </div>
             <div id="info-wrapper">
                 <h3>Hi</h3>
             </div>
-        </div>        
+        </div>  
+        
+        <!-- At the bottom to help with page load times -->
+        <script src="./js/index.js"></script>
     </body>
 </html>
