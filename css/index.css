@@ -12,17 +12,14 @@ html {
 body {
     margin: 0;
     padding: 0;
-    margin-top: .5rem;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 3.5rem repeat(11, 1fr);
+    padding: 1rem;
 }
 
 #nav-wrapper {
-    grid-column-start: 2;
-    grid-column-end: 12;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    margin-left: 5%;
+    width: 90%;
+    height: 2.5rem;
+    position: fixed;
     background-color: rgb(0, 232, 242);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -42,20 +39,28 @@ body {
     justify-self: stretch;
 }
 
+#nav-left a {
+    color: black;
+    text-decoration: none;
+}
+
 .nameHeader {
     float: left;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2rem;
     margin: 0;
     margin-top: .25rem;
+    padding-right: .5rem;
+    margin-right: .5rem;
+    border-right: .13rem solid white;
 }
 
 .taglineHeader {
     margin: 0;
     font-family: 'Maitree', serif;
     font-size: 1.13rem;
+    font-weight: lighter;
     margin-top: -.13rem;
-    margin-left: .5rem;
     line-height: 1.25;
 }
 
@@ -85,6 +90,13 @@ body {
     justify-self: stretch;
 }
 
+#main {
+    margin-top: .5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 3.5rem repeat(11, 1fr);
+}
+
 #content-wrapper {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -104,7 +116,21 @@ body {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: -1;
-    background-color: black;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#pro-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center; 
 }
 
 #content-right {
@@ -113,6 +139,21 @@ body {
     grid-row-start: 1;
     grid-row-end: -1;
     background-color: teal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+}
+
+#fun-header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-self: center;
+    align-self: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2rem;
+    text-align: center;
 }
 
 #info-wrapper {
