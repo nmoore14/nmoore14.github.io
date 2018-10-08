@@ -3,15 +3,7 @@ var app = new Vue({
     data: {
         message: 'Hello Vue!',
         message2: 'This is another test',
-        links: [
-            {
-                name: 'Home',
-                location: 'index.html'
-            },
-            {
-                name: 'About',
-                location: 'http://www.google.com'
-            }
-        ]
+        pro: [],
+        fun: []
     }
 })
