@@ -39,6 +39,9 @@
                 <div id="content-left">
                     <h3 id="pro-header">Professional</h3>
                     {{ message }}
+                    <ul v-for="link in links">
+                        <li>{{ link.name }}</li>
+                    </ul>
                 </div>
                 <div id="content-right">
                     <h3 id="fun-header">For FUN</h3>
