@@ -4,8 +4,8 @@ font-family: 'Maitree', serif;
 */
 
 html {
-    background-color: #636363;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23929292' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: #dddddd;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='26' viewBox='0 0 32 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0v3.994C14 7.864 10.858 11 7 11c-3.866 0-7-3.138-7-7.006V0h2v4.005C2 6.765 4.24 9 7 9c2.756 0 5-2.236 5-4.995V0h2zm0 26v-5.994C14 16.138 10.866 13 7 13c-3.858 0-7 3.137-7 7.006V26h2v-6.005C2 17.235 4.244 15 7 15c2.76 0 5 2.236 5 4.995V26h2zm2-18.994C16 3.136 19.142 0 23 0c3.866 0 7 3.138 7 7.006v9.988C30 20.864 26.858 24 23 24c-3.866 0-7-3.138-7-7.006V7.006zm2-.01C18 4.235 20.244 2 23 2c2.76 0 5 2.236 5 4.995v10.01C28 19.765 25.756 22 23 22c-2.76 0-5-2.236-5-4.995V6.995z' fill='%23eaeaea' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     font-size: 12pt;
 }
 
@@ -104,7 +104,6 @@ body {
     grid-row-end: 10;
     margin: 0;
     padding: 0;
-    background-color: red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -116,10 +115,16 @@ body {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: -1;
-    background-color: blue;
+    background-color: rgba(250, 250, 250, 0);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
+    border-radius: 1rem;
+    transition: ease-in-out .5s;
+}
+
+#content-left:hover {
+    transform: scale(1.025);
 }
 
 #pro-header {
@@ -129,6 +134,7 @@ body {
     grid-row-end: 1;
     justify-self: center;
     align-self: center;
+    margin: 0;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2rem;
     text-align: center; 
@@ -139,10 +145,17 @@ body {
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: -1;
-    background-color: teal;
+    background-color: rgba(250, 250, 250, 0);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
+    border-radius: 1rem;
+    background-blend-mode: color-burn;
+    transition: ease-in-out .5s;
+}
+
+#content-right:hover {
+    transform: scale(1.025);
 }
 
 #fun-header {
@@ -152,9 +165,23 @@ body {
     grid-row-end: 1;
     justify-self: center;
     align-self: center;
+    margin: 0;
     font-family: 'Julius Sans One', sans-serif;
     font-size: 2rem;
     text-align: center;
+}
+
+.contentSubHeader {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+    font-family: 'Maitree', serif;
+    font-size: 1.25rem;
+    font-weight: lighter;
 }
 
 #info-wrapper {
