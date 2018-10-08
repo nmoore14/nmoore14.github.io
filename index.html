@@ -43,6 +43,15 @@
                 <div id="content-right">
                     <h3 id="fun-header">For FUN</h3>
                     <h5 class="contentSubHeader">Projects that I have created for fun and learning.</h5>
+                    <div id="fun-completed">
+                        <h5>Completed</h5>
+                        <ul v-for="project in fun" id="fun-top-list">
+                            <li>
+                                <a v-bind:href="project.location">{{ project.name }}</a><br />
+                                <small class="sourceTextLink"><a v-bind:href="project.source">Source Code</a></small>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div id="info-wrapper">
