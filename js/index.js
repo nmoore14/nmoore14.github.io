@@ -10,7 +10,7 @@ var app = new Vue({
             },
             {
                 name: 'About',
-                location: 'about.html'
+                location: 'http://www.google.com'
             }
         ]
     }

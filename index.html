@@ -40,7 +40,7 @@
                     <h3 id="pro-header">Professional</h3>
                     {{ message }}
                     <ul v-for="link in links">
-                        <li>{{ link.name }}</li>
+                        <li><a v-bind:href="link.location" >{{ link.name }}</a></li>
                     </ul>
                 </div>
                 <div id="content-right">
