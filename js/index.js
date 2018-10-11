@@ -18,12 +18,9 @@ var app = new Vue({
             }
         ]
     },
-    mounted: [
+    mounted:
         function() {
             alert("This is a work in progress.");
-        },
-        function() {
-            alert("This is a test")
         }
-    ]
+
 })
