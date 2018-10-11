@@ -140,6 +140,38 @@ body {
     text-align: center; 
 }
 
+#professional-inProgress {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 6;
+    grid-row-end: 12;
+    justify-self: center;
+    margin: 0;
+    text-align: center;
+    font-family: 'Maitree', serif;
+}
+
+#professional-inProgress h5 {
+    margin: 0;
+    margin-top: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.75rem;
+}
+
+#pro-bottom-list {
+    list-style-type: none;
+    color: teal;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+#pro-bottom-list li>a {
+    text-decoration: none;
+    color: teal;
+}
+
 #content-right {
     grid-column-start: 2;
     grid-column-end: -1;

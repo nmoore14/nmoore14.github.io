@@ -3,10 +3,10 @@ var app = new Vue({
     data: {
         pro: [
             {
-                name: '',
-                location: '',
-                source: '',
-                completed: ''
+                name: '* MAMP Localhost Customization',
+                location: 'https://github.com/nmoore14/MAMP_Localhost_Customization',
+                source: 'https://github.com/nmoore14/MAMP_Localhost_Customization',
+                completed: 'false'
             }
         ],
         fun: [
