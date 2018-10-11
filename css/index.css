@@ -150,6 +150,17 @@ body {
     text-align: center; 
 }
 
+#professional-completed {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    justify-self: center;
+    margin: 0;
+    text-align: center;
+    font-family: 'Maitree', serif;
+}
+
 #professional-inProgress {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -270,6 +281,17 @@ body {
 .sourceTextLink a {
     text-decoration: none;
     color: teal;
+}
+
+#fun-inProgress {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 6;
+    grid-row-end: 12;
+    justify-self: center;
+    margin: 0;
+    text-align: center;
+    font-family: 'Maitree', serif;
 }
 
 #info-wrapper {

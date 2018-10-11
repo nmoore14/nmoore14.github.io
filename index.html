@@ -48,6 +48,15 @@
                 <div id="content-left">
                     <h3 id="pro-header">Professional</h3>
                     <h5 class="contentSubHeader">Projects that I would consider to be business or company related.</h5>
+                    <div id="professional-completed">
+                        <h5>Completed</h5>
+                        <ul v-for="project in pro" v-if="project.completed" id="pro-top-list">
+                            <li>
+                                <a v-bind:href="project.location">{{ project.name }}</a><br />
+                                <small class="sourceTextLink"><a v-bind:href="project.source">Source Code</a></small>
+                            </li>
+                        </ul>
+                    </div>
                     <div id="professional-inProgress">
                         <h5>In Progress</h5>
                         <ul v-for="project in pro" v-if="!project.completed" id="pro-bottom-list">
@@ -70,6 +79,15 @@
                             </li>
                         </ul>
                     </div>
+                <div id="fun-inProgress">
+                    <h5>In Progress</h5>
+                    <ul v-for="project in fun" v-if="!project.completed" id="fun-bottom-list">
+                        <li>
+                            <a v-bind:href="project.location">{{ project.name }}</a><br />
+                            <small class="sourceTextLink"><a v-bind:href="project.source">Source Code</a></small>
+                        </li>
+                    </ul>
+                </div>
                 </div>
             </div>
             <div id="info-wrapper">
