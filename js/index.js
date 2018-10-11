@@ -6,7 +6,7 @@ var app = new Vue({
                 name: '* MAMP Localhost Customization',
                 location: 'https://github.com/nmoore14/MAMP_Localhost_Customization',
                 source: 'https://github.com/nmoore14/MAMP_Localhost_Customization',
-                completed: 'false'
+                completed: false
             }
         ],
         fun: [

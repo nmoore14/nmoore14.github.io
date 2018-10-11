@@ -41,7 +41,7 @@
                     <h5 class="contentSubHeader">Projects that I would consider to be business or company related.</h5>
                     <div id="professional-inProgress">
                         <h5>In Progress</h5>
-                        <ul v-for="project in pro" id="pro-bottom-list">
+                        <ul v-for="project in pro" v-if="!project.completed" id="pro-bottom-list">
                             <li>
                                 <a v-bind:href="project.location">{{ project.name }}</a><br />
                                 <small class="sourceTextLink"><a v-bind:href="project.source">Source Code</a></small>
@@ -54,7 +54,7 @@
                     <h5 class="contentSubHeader">Projects that I have created for fun and learning.</h5>
                     <div id="fun-completed">
                         <h5>Completed</h5>
-                        <ul v-for="project in fun" id="fun-top-list">
+                        <ul v-for="project in fun" v-if="project.completed" id="fun-top-list">
                             <li>
                                 <a v-bind:href="project.location">{{ project.name }}</a><br />
                                 <small class="sourceTextLink"><a v-bind:href="project.source">Source Code</a></small>
