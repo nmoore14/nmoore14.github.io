@@ -161,6 +161,13 @@ body {
     font-family: 'Maitree', serif;
 }
 
+#professional-completed h5 {
+    margin: 0;
+    margin-top: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.75rem;
+}
+
 #professional-inProgress {
     grid-column-start: 1;
     grid-column-end: -1;
@@ -292,6 +299,13 @@ body {
     margin: 0;
     text-align: center;
     font-family: 'Maitree', serif;
+}
+
+#fun-inProgress h5 {
+    margin: 0;
+    margin-top: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.75rem;
 }
 
 #info-wrapper {
