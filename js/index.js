@@ -17,5 +17,8 @@ var app = new Vue({
                 completed: true
             }
         ]
+    },
+    mounted: function() {
+        alert("This is a work in progress.");
     }
 })

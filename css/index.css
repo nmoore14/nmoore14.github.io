@@ -87,7 +87,17 @@ body {
     grid-column-end: -1;
     grid-row-start: 1;
     grid-row-end: 1;
-    justify-self: stretch;
+    justify-self: right;
+}
+
+#nav-right a {
+    text-decoration: none;
+}
+
+#nav-right img {
+    width: 2.5rem;
+    height: auto;
+    margin: 0 .5rem 0 .5rem;
 }
 
 #main {
@@ -254,6 +264,12 @@ body {
 .sourceTextLink {
     font-weight: lighter;
     font-size: 1rem;
+    color: teal;
+}
+
+.sourceTextLink a {
+    text-decoration: none;
+    color: teal;
 }
 
 #info-wrapper {
