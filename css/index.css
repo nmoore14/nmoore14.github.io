@@ -321,6 +321,22 @@ body {
     background-color: yellow;
 }
 
+#about {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    background-color: teal;
+}
+
+#contact {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    background-color: pink;
+}
+
 /* Breakpoint 1 */
 @media (max-width: 1199px) {
 
