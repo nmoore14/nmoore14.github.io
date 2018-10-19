@@ -19,7 +19,7 @@ var app = new Vue({
             {
                 name: 'Monster Slayer',
                 location: 'projects/fun/Monster-Slayer/index.html',
-                source:'',
+                source: 'https://jsfiddle.net/nmoore14/ovLm2rg1/136/',
                 completed: true
             }
         ]
