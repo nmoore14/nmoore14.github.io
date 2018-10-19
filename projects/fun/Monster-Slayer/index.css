@@ -1,0 +1,169 @@
+/*
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Bahiana', cursive;
+*/
+
+html {
+    background-color: white;
+    font-size: 12pt;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.main {
+    background-color: white;
+}
+
+.mainRow {
+    background-color: white;
+}
+
+.titleContainer {
+    background-color: white;
+}
+
+.titleRow {
+    background-color: white;
+}
+
+.gameTitle {
+    background-color: white;
+    margin: 0;
+    padding: .5rem;
+    border-bottom: .25rem solid red;
+}
+
+.gameTitle .display-3 {
+    text-align: center;
+    font-family: 'Bahiana', cursive;
+}
+
+.display-5 {
+    text-align: center;
+}
+
+.healthRow {
+    background-color: white;
+    margin-top: .5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.userHealthDisplay {
+    background-color: white;
+    width: 100%;
+    height: 2rem;
+    padding: .13rem;
+    border: .13rem solid #78909C;
+    border-radius: .5rem;
+}
+
+.monsterHealthDisplay {
+    background-color: white;
+    width: 100%;
+    height: 2rem;
+    padding: .13rem;
+    border: .13rem solid #78909C;
+    border-radius: .5rem;
+}
+
+.userHealthBar {
+    display: block;
+    height: 100%;
+    background-color: blue;
+    border-radius: .25rem;
+}
+
+.monsterHealthBar {
+    display: block;
+    height: 100%;
+    width: 5%;
+    background-color: blue;
+    border-radius: .25rem;
+    float: right;
+}
+
+.btnRow {
+    margin: 0;
+    padding: .5rem;
+    ;
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: .5rem;
+    filter: drop-shadow(1px 2px 2px black);
+}
+
+#start-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: white;
+    background-color: green;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.playing {
+    margin: 0;
+    padding: 0;
+}
+
+#hit-btn {
+    margin: 0;
+    padding: .5rem;
+    width: 49%;
+    height: 100%;
+    border: none;
+    border-radius: .5rem;
+    font-family: 'Bahiana', cursive;
+    font-size: 2rem;
+    background-color: purple;
+    color: white;
+}
+
+#sp-attack-btn {
+    margin: 0;
+    padding: 0;
+    width: 49%;
+    height: 100%;
+    border: none;
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-family: 'Bahiana', cursive;
+    font-weight: lighter;
+    background-color: teal;
+    color: white;
+}
+
+#heal-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: .5rem;
+    font-family: 'Bahiana', cursive;
+    font-size: 2rem;
+    background-color: #81C784;
+    color: #0D47A1;
+}
+
+#giveUp-btn {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: .5rem;
+    font-family: 'Bahiana', cursive;
+    font-size: 2rem;
+    background-color: #B71C1C;
+    color: white;
+}
+
+.table-dark {
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: .5rem;
+}

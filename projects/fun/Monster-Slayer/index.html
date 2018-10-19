@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Nick Moore | Monster Slayer</title>
+
+        <!-- CSS Links -->
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bahiana|Press+Start+2P" rel="stylesheet">
+
+        <!-- JS Linkst that are needed before or as page loads-->
+        <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <!-- Game area -->
+        <div class="container main" id="app">
+            <div class="row mainRow">
+                <div class="col-12 col-md-12 col-xl-12 titleContainer">
+                    <div class="row titleRow">
+                        <div class="col-12 gameTitle">
+                            <h1 class="display-3">Monster Slayer</h1>
+                        </div>
+                    </div>
+                    <div class="row healthRow">
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 userHealth">
+                            <div class="userHealthDisplay">
+                                <span class="userHealthBar" :style="userHealth"></span>
+                            </div>
+                            <h3 class="display-5">{{ username }}</h3>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6 col-xl-6 monsterHealth">
+                            <div class="monsterHealthDisplay">
+                                <span class="monsterHealthBar" :style="monsterHealth"></span>
+                            </div>
+                            <h3 class="display-5">MONSTER</h3>
+                        </div>
+                    </div>
+                    <div class="row btnRow">
+                        <template v-if="!playing">
+                            <div class="col-12 col-md-4 col-lg-4 col-xl-4 left"></div>
+                            <div class="col-12 col-md-4 col-lg-4 col-xl-4 middle">
+                                <button @click="startGame()" id="start-btn">Start Game</button>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-4 col-xl-4 right"></div>
+                        </template>
+                        <template v-else>
+                            <div class="col-12 col-md-6 col-lg-6 col-xl-6 left playing">
+                                <button @click="[lowerMonsterHealth(), monsterLowAttack()]" id="hit-btn">Hit</button>
+                                <button @click="[specialUserAttack(), specialMonsterAttack()]" id="sp-attack-btn">Special
+                                    Attack</button>
+                            </div>
+                            <div class="col-12 col-md-3 col-lg-3 col-xl-3 middle playing">
+                                <button @click="userHeal()" id="heal-btn">Heal</button>
+                            </div>
+                            <div class="col-12 col-md-3 col-lg-3 col-xl-3 right playing">
+                                <button @click="giveUp()" id="giveUp-btn">Give Up</button>
+                            </div>
+                        </template>
+                    </div>
+                    <template v-if="playing">
+                        <div class="row gameLogRow">
+                            <table class="table table-striped table-dark">
+                                <tr v-for="log in gameLog">
+                                    <td>{{ log }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <!-- At the bottom of the page to help with load times-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>

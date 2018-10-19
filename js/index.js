@@ -15,6 +15,12 @@ var app = new Vue({
                 location: 'projects/fun/Guess-A-Number_v1/index.html',
                 source: 'https://github.com/nmoore14/Fall_2018_School/tree/master/WEBT%202300%20-%20Client%20Side%20Programming/Projects/NickMoore_Exam1',
                 completed: true
+            },
+            {
+                name: 'Monster Slayer',
+                location: 'projects/fun/Monster-Slayer/index.html',
+                source:'',
+                completed: true
             }
         ]
     },
