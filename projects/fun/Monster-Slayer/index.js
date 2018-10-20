@@ -78,6 +78,7 @@ new Vue({
                 this.playing = !this.playing;
                 this.gameLog = [];
                 this.username = '';
+                this.healCount = 5;
             }
         },
         user: function () {
@@ -88,6 +89,7 @@ new Vue({
                 this.playing = !this.playing;
                 this.gameLog = [];
                 this.username = '';
+                this.healCount = 5;
             }
         },
         userHeal: function() {
