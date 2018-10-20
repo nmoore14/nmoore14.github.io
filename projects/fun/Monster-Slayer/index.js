@@ -91,7 +91,7 @@ new Vue({
             }
         },
         userHeal: function() {
-            if (this.healCount == 0) {
+            if (this.healCount <= 0) {
                 return this.disabled = true;
             }
         }
