@@ -6,7 +6,7 @@ new Vue({
         playing: false,
         gameLog: [],
         username: '',
-        healCount: 5,
+        healCount: 3,
         disabled: false
     },
     computed: {
