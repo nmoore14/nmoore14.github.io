@@ -5,7 +5,9 @@ new Vue({
         monster: 100,
         playing: false,
         gameLog: [],
-        username: ''
+        username: '',
+        healCount: 5,
+        disabled: false
     },
     computed: {
         userHealth: function () {
@@ -47,7 +49,7 @@ new Vue({
                     this.user += userGap;
                     this.gameLog.push(this.username + " heals for " + userGap);
                 }
-                console.log(this.user);
+                this.healCount -= 1;
             }
         },
         monsterLowAttack: function () {
@@ -86,6 +88,11 @@ new Vue({
                 this.playing = !this.playing;
                 this.gameLog = [];
                 this.username = '';
+            }
+        },
+        userHeal: function() {
+            if (this.healCount == 0) {
+                return this.disabled = true;
             }
         }
     }
