@@ -6,6 +6,8 @@ new Vue({
         playing: false,
         gameLog: [],
         username: '',
+        monsterName: '',
+        monsters: ['MadMother', 'Upset Wife', 'Deranged Yorkie', 'Sinister Sister-In-Law', 'Senile Supervisor'],
         healCount: 3,
         disabled: false
     },
@@ -26,7 +28,14 @@ new Vue({
             if(this.username == '') {
                 this.username = prompt('Please enter your name.', '');
             }
+
             this.playing = !this.playing;
+        },
+        selectMonster: function() {
+            if (this.monsterName == '') {
+                monsterSelect = prompt('Please select a monster. \n0 - MadMother\n1 - Upset Wife\n2 - Deranged Yorkie\n3 - Sinister Sister-In-Lay\n4 - Senile Supervisor', '');
+                this.monsterName = this.monsters[monsterSelect];
+            }
         },
         lowerMonsterHealth: function () {
             var userHit = Math.floor(Math.random() * 10) + 1;
@@ -78,6 +87,7 @@ new Vue({
                 this.playing = !this.playing;
                 this.gameLog = [];
                 this.username = '';
+                this.monsterName = '';
                 this.healCount = 5;
             }
         },
@@ -89,6 +99,7 @@ new Vue({
                 this.playing = !this.playing;
                 this.gameLog = [];
                 this.username = '';
+                this.monsterName = '';
                 this.healCount = 5;
             }
         },
