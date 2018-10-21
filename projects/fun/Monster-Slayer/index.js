@@ -88,7 +88,7 @@ new Vue({
                 this.gameLog = [];
                 this.username = '';
                 this.monsterName = '';
-                this.healCount = 5;
+                this.healCount = 3;
             }
         },
         user: function () {
@@ -100,7 +100,7 @@ new Vue({
                 this.gameLog = [];
                 this.username = '';
                 this.monsterName = '';
-                this.healCount = 5;
+                this.healCount = 3;
             }
         },
         userHeal: function() {
