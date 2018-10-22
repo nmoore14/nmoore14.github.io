@@ -76,7 +76,8 @@
                         <table class="table table-striped table-dark tablePro">
                             <tr>
                                 <th class="tableHeader1">Project</th>
-                                <th class="tableHeader2">Source Code</th>
+                                <th class="tableHeader2">Source</th>
+                                <th class="tableHeader3">Complete</th>
                             </tr>
                             <tr v-for="project in projects">
                                 <template v-if="project.category == 'pro'">
@@ -90,7 +91,8 @@
                         <table class="table table-striped table-dark tableFun">
                             <tr class="tableHeader">
                                 <th class="tableHeader1">Project</th>
-                                <th class="tableHeader2">Source Code</th>
+                                <th class="tableHeader2">Source</th>
+                                <th class="tableHeader3">Complete</th>
                             </tr>
                             <tr v-for="project in projects">
                                 <template v-if="project.category == 'fun'">
