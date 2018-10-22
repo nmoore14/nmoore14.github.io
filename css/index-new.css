@@ -1,0 +1,164 @@
+/*
+font-family: 'Yantramanav', sans-serif;
+font-family: 'Permanent Marker', cursive;
+*/
+
+
+html {
+    background-color: #eaeaea;
+    font-size: 12pt;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#top-container {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#top-nav {
+    padding: 0;
+    padding: .5rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-top: .5rem;
+    
+}
+
+#top-nav:hover {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+#navbarDropdownMenuLink {
+    color: gold;
+    background-color: #1565C0;
+    border-radius: .5rem;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.dropdown-menu {
+    border-radius: .5rem;
+    background-color: #e6e6e6;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #1565C0;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: 700;
+}
+
+.jumbotron {
+    height: 30rem;
+    background: url(../images/bg1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jumbotron .display-3 {
+    text-align: center;
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6rem;
+}
+
+.lead {
+    text-align: center;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0;
+    margin-top: -2.5rem;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-bottom: solid .13rem white;
+    border-right: solid .13rem white;
+}
+
+.jumbotron .imgContainer img {
+    width: 15rem;
+    height: auto;
+    border: .13rem solid white;
+    filter: drop-shadow(2px 2px 2px black);
+    float: right;
+}
+
+.blurbContainer {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 1rem;
+    border-left: solid .13rem white;
+    border-top: solid .13rem white;
+}
+
+.blurbText {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.projectsRow {
+    background-color: white;
+    padding: .5rem;
+    margin: 0;
+    border-radius: 1rem;
+    filter: drop-shadow(2px 2px 2px #CFD8DC);
+}
+
+.tablePro, 
+.tableFun {
+    text-align: center;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tablePro th,
+.tableFun th {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+}
+
+.tablePro .tableHeader1, 
+.tableFun .tableHeader1 {
+    background-color: #26C6DA;
+    border: none;
+    border-radius: .5rem 0 0 0;
+}
+
+.tablePro .tableHeader2,
+.tableFun .tableHeader2 {
+    background-color: #26C6DA;
+    border: none;
+    border-radius: 0 .5rem 0 0;
+}
+
+.tablePro td,
+.tableFun td {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: lighter;
+    font-size: 1.25rem;
+}
+
+.tablePro a,
+.tableFun a {
+    color: black;
+}
+
+.tablePro a:hover,
+.tableFun a:hover {
+    font-weight: 400;
+}
+
+.ghLogo {
+    width: 2.5rem;
+    height: auto;
+}
