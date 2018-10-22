@@ -175,3 +175,83 @@ body {
     width: 2rem;
     height: auto;
 }
+
+@media (max-width: 800px) {
+    .blurbText {
+        font-weight: 300;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .jumbotron .display-3 {
+        font-size: 3rem;
+    }
+
+    .lead {
+        padding: 0;
+        border-radius: 1rem;
+        margin: 0;
+        margin-top: -.5rem;
+        font-size: 1rem;
+    }
+
+    .jumbotron .imgContainer img {
+        margin-top: .5rem;
+        width: 6rem;
+        height: auto;
+        border: .05rem solid white;
+        float: none;
+    }
+
+    .blurbContainer {
+        border-radius: .5rem;
+        border-left: solid .05rem white;
+        border-top: solid .05rem white;
+        margin-top: 1rem;
+        padding: .5rem;
+    }
+
+    .blurbText {
+        font-family: 'Yantramanav', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .tablePro th,
+    .tableFun th {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 1rem;
+    }
+
+    .tablePro .tableHeader2,
+    .tableFun .tableHeader2 {
+        background-color: #26C6DA;
+        border: none;
+        font-size: 1rem;
+    }
+
+    .tablePro .tableHeader3,
+    .tableFun .tableHeader3 {
+        font-size: 1rem;
+    }
+
+    .tablePro td,
+    .tableFun td {
+        font-size: 1rem;
+    }
+
+    .ghLogo {
+        width: 2rem;
+        height: auto;
+    }
+
+    .check {
+        width: 1.5rem;
+        height: auto;
+    }
+}
