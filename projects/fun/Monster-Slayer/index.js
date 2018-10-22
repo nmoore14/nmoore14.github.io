@@ -29,14 +29,9 @@ new Vue({
             monsterSelect = prompt('Please select a monster. \n0 - MadMother\n1 - Upset Wife\n2 - Deranged Yorkie\n3 - Sinister Sister-In-Law\n4 - Senile Supervisor', '');
             this.monsterName = this.monsters[monsterSelect];
 
-            this.playing = !this.playing;
-        },
-        selectMonster: function () {
-            if (this.monsterName == '') {
-                monsterSelect = prompt('Please select a monster. \n0 - MadMother\n1 - Upset Wife\n2 - Deranged Yorkie\n3 - Sinister Sister-In-Lay\n4 - Senile Supervisor', '');
-                this.monsterName = this.monsters[monsterSelect];
+            if(this.username != null && this.monsterName != undefined) {
+                this.playing = !this.playing;
             }
-            console.log("This is a test to see if this push worked.");
         },
         lowerMonsterHealth: function () {
             var userHit = Math.floor(Math.random() * 10) + 1;
