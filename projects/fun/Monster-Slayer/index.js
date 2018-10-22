@@ -25,17 +25,16 @@ new Vue({
     },
     methods: {
         startGame: function() {
-            if(this.username == '') {
-                this.username = prompt('Please enter your name.', '');
+            this.username = prompt('Please enter your name:', '');
+            monsterSelect = prompt('Please select a monster. \n0 - MadMother\n1 - Upset Wife\n2 - Deranged Yorkie\n3 - Sinister Sister-In-Law\n4 - Senile Supervisor', '');
+            this.monsterName = this.monsters[monsterSelect];
+
+            if(this.username != null && this.monsterName != undefined) {
+                this.playing = !this.playing;
             }
 
-            this.playing = !this.playing;
-        },
-        selectMonster: function() {
-            if (this.monsterName == '') {
-                monsterSelect = prompt('Please select a monster. \n0 - MadMother\n1 - Upset Wife\n2 - Deranged Yorkie\n3 - Sinister Sister-In-Law\n4 - Senile Supervisor', '');
-                this.monsterName = this.monsters[monsterSelect];
-            }
+            console.log(this.username);
+            console.log(this.monsterName);
         },
         lowerMonsterHealth: function () {
             var userHit = Math.floor(Math.random() * 10) + 1;
