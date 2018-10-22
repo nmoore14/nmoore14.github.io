@@ -32,9 +32,6 @@ new Vue({
             if(this.username != null && this.monsterName != undefined) {
                 this.playing = !this.playing;
             }
-
-            console.log(this.username);
-            console.log(this.monsterName);
         },
         lowerMonsterHealth: function () {
             var userHit = Math.floor(Math.random() * 10) + 1;
