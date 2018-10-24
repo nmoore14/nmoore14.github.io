@@ -83,7 +83,7 @@
                                 <template v-if="project.category == 'pro'">
                                     <td><a v-bind:href="project.location">{{ project.name }}</a></td>
                                     <td><a v-bind:href="project.source"><img src="./images/icons/github-icon-1.svg" class="rounded-circle ghLogo" alt="GitHub Logo"></td></a>
-                                    <td v-if="project.completed"><img src="./images/icons/checkmark.svg" alt="Checkmark"></td>
+                                    <td v-if="project.completed"><img src="./images/icons/checkmark.svg" alt="Checkmark" class="check"></td>
                                 </template>
                             </tr>
                         </table>
