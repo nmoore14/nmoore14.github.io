@@ -25,7 +25,15 @@ var app = new Vue({
                 category: 'fun',
                 completed: true,
                 featured: true
-            }
+            },
+            {
+                name: 'Wonderful Quotes',
+                location: 'https://github.com/nmoore14/Wonderful-Quotes',
+                source: 'https://github.com/nmoore14/Wonderful-Quotes',
+                category: 'pro',
+                completed: true,
+                featured: true
+            },
         ]
     }
 })
