@@ -16,7 +16,7 @@ var app = new Vue({
                 source: 'https://github.com/nmoore14/Fall_2018_School/tree/master/WEBT%202300%20-%20Client%20Side%20Programming/Projects/NickMoore_Exam1',
                 category: 'fun',
                 completed: true,
-                featured: true
+                featured: false
             },
             {
                 name: 'Monster Slayer',

@@ -176,6 +176,49 @@ body {
     height: auto;
 }
 
+
+.resumeTitle .display-1 {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: lighter;
+    font-size: 7rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 10rem;
+    padding-top: -2rem;
+    text-align: center;
+    color: white;
+    background: url(../images/bg1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.resumeTitle h4 {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    margin-top: -1.25rem;
+    text-align: center;
+    background-color: rgba(25, 189, 161, 1);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.resumeExpertise {
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.resumeExpertise h3{
+    text-align: center;
+}
+
+.expertGroup {
+    text-align: center;
+}
+
 @media (max-width: 800px) {
     .blurbText {
         font-weight: 300;
