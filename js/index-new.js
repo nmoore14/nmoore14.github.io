@@ -44,7 +44,7 @@ var app = new Vue({
                     school: 'Northeast State Community College',
                     location: 'Blountville, TN',
                     attended: '2016-current',
-                    relatedCourses: ['Concepts of Computer Applications', 'Essentials of Web Development', 'Visual BASIC', 'SQL Fundamentals', 'Introduction to Networking', 'Introduction to Scripting Language', 'Java 1', 'JavaScript', 'A+ Hardware and Software'];
+                    relatedCourses: ['Concepts of Computer Applications', 'Essentials of Web Development', 'Visual BASIC', 'SQL Fundamentals', 'Introduction to Networking', 'Introduction to Scripting Language', 'Java 1', 'JavaScript', 'A+ Hardware and Software']
                 }
             ]
         }
