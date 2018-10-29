@@ -34,6 +34,19 @@ var app = new Vue({
                 completed: true,
                 featured: true
             },
-        ]
+        ],
+        resume: {
+            title: 'Nicholas Moore',
+            subTitle: 'Graphic Artist / Web Developer',
+            expertise: ['Adobe Creative Suite Collections', 'Microsoft Office Collections', 'HTML, CSS, JavaScript, Vue, PHP', 'Mac and PC graphic design tools'],
+            education: [
+                {
+                    school: 'Northeast State Community College',
+                    location: 'Blountville, TN',
+                    attended: '2016-current',
+                    relatedCourses: ['Concepts of Computer Applications', 'Essentials of Web Development', 'Visual BASIC', 'SQL Fundamentals', 'Introduction to Networking', 'Introduction to Scripting Language', 'Java 1', 'JavaScript', 'A+ Hardware and Software'];
+                }
+            ]
+        }
     }
 })
