@@ -37,7 +37,7 @@ var app = new Vue({
             {
                 name: 'Calculator',
                 location: 'projects/learning/calculator',
-                source: 'https://github.com/nmoore14/Wonderful-Quotes',
+                source: 'https://github.com/nmoore14/Fall_2018_School/tree/master/WEBT%202300%20-%20Client%20Side%20Programming/Projects/Project3-Calculator',
                 category: 'pro',
                 completed: false,
                 featured: true
