@@ -34,6 +34,14 @@ var app = new Vue({
                 completed: true,
                 featured: true
             },
+            {
+                name: 'Calculator',
+                location: 'projects/learning/calculator',
+                source: 'https://github.com/nmoore14/Wonderful-Quotes',
+                category: 'pro',
+                completed: false,
+                featured: true
+            },
         ],
         resume: {
             title: 'Nicholas Moore',
