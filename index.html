@@ -1,138 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Nick Moore | Creator</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="UTF-8">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-        
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="./css/index-new.css">
-        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Yantramanav:300,400,700" rel="stylesheet">
-        
-    </head>
-    <body>
-        <main id="main">
-            <nav class="navbar fixed-top navbar-expand-lg navbar navbar-dark" id="top-nav">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle featured" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Featured Projects
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" v-for="project in projects" v-bind:href="project.source" v-if="project.featured">{{ project.name }}</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-2" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                All Projects
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" v-for="project in projects" v-bind:href="project.source">
-                                    {{ project.name }}
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-3">Welcome</h1>
-                    <p class="lead">Nick Moore | <small>Graphic Designer & Web Developer</small></p>
-                    <hr class="my-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 imgContainer">
-                            <img src="./images/IMG_0024.jpg" class="rounded mx-auto d-block" alt="Drawing of Nick Moore">
-                            </div>
-                            <div class="col-md-8 blurbContainer">
-                                <p class="blurbText">
-                                    Talented and creative graphic artist and web developer pursuing an associate degree in Internet and Web Development.
-                                    Ability to be productive in a team and self-managed environments. Dedicated to delivering high levels of customer
-                                    service and producing top quality projects.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container projectsContainer">
-                <div class="row projectsRow">
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 colPro">
-                        <table class="table table-striped table-dark tablePro">
-                            <tr>
-                                <th class="tableHeader1">Project</th>
-                                <th class="tableHeader2">Source</th>
-                                <th class="tableHeader3">Complete</th>
-                            </tr>
-                            <tr v-for="project in projects">
-                                <template v-if="project.category == 'pro'">
-                                    <td><a v-bind:href="project.location">{{ project.name }}</a></td>
-                                    <td><a v-bind:href="project.source"><img src="./images/icons/github-icon-1.svg" class="rounded-circle ghLogo" alt="GitHub Logo"></td></a>
-                                    <td v-if="project.completed"><img src="./images/icons/checkmark.svg" alt="Checkmark" class="check"></td>
-                                </template>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-6 col-xl-6 colFun">
-                        <table class="table table-striped table-dark tableFun">
-                            <tr class="tableHeader">
-                                <th class="tableHeader1">Project</th>
-                                <th class="tableHeader2">Source</th>
-                                <th class="tableHeader3">Complete</th>
-                            </tr>
-                            <tr v-for="project in projects">
-                                <template v-if="project.category == 'fun'">
-                                    <td><a v-bind:href="project.location">{{ project.name }}</a></td>
-                                    <td><a v-bind:href="project.source"><img src="./images/icons/github-icon-1.svg" class="rounded-circle ghLogo" alt="GitHub Logo"></a></td>
-                                    <td v-if="project.completed"><img src="./images/icons/checkmark.svg" alt="Checkmark" class="check"></td>
-                                </template>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="container resumeContainer">
-                <div class="row resumeTitle">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                        <h1 class="display-1">My Resume</h1>
-                        <h4>{{ resume.subTitle }}</h4>
-                    </div>   
-                </div>
-                <div class="row resumeExpertise">
-                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
-                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                        <h3>Expertise</h3>
-                        <ul class="list-group expertGroup" v-for="expert in resume.expertise">
-                            <li class="list-group-item expertItem">{{ expert }}</li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
-                </div>
-            </div>
-        </main>
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-        <script src="./js/index-new.js"></script>
-    </body>
+  <link rel="stylesheet" href="css/index-new.css">
+
+  <title>Nick Moore | Web Developer</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="content">
+        <img src="" alt="">
+        <p>This is my text</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <img src="" alt="">
+        <p>This is my text</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <img src="" alt="">
+        <p>This is my text</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <img src="" alt="">
+        <p>This is my text</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <img src="" alt="">
+        <p>This is my text</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <img src="" alt="">
+        <p>This is my text</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="content">
+        <img src="" alt="">
+        <p>This is my text</p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
