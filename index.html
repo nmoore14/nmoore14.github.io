@@ -18,19 +18,42 @@
     <body>
         <section class="info">
             <div class="info-element">
-                <div class="info-element-item">
+                <div class="info-element-item  js-info-modal-toggle">
                     <svg xmlns="http://www.w3.org/2000/svg" class="info-element-icon" viewBox="0 0 20 20" fill="currentColor">
                       <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
                     </svg>
                 </div>
             </div>
         </section>
-        <header>
-            <section class="header">
-                <h1 class="header-title">Nick Moore</h1>
-            </section>
-        </header>
-        <div class="hero">
+        <main>
+            <header>
+                <section class="header">
+                    <h1 class="header-title">Nick Moore</h1>
+                </section>
+            </header>
+            <div class="hero">
+            </div>
+        </main>
+
+        <!-- Information Modal -->
+        <div class="modal glass  js-modal">
+            <div class="modal-body glass-card  js-modal-body">
+                <div class="modal-header">
+                    <div class="modal-header-title">
+                        <h3>Site Information</h3>
+                    </div>
+                    <div class="modal-header-close  js-modal-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-content">
+                    <p>
+                        This site is my playground...it will be updated a lot and without warning!
+                    </p>
+                </div>
+            </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./js/index.js"></script>
