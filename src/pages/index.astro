@@ -1,11 +1,108 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Card from '../components/Card.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getAllProjects, getFeaturedProjects, type Project } from '../data/projects';
+
+// Get projects data
+const featuredProjects: Project[] = getFeaturedProjects();
+const otherProjects: Project[] = getAllProjects().filter(project => !project.featured);
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Nick Moore - Software Engineer">
+	<Navigation />
+	
+	<main>
+		<section class="relative h-screen flex items-center justify-center bg-background">
+			<div class="text-center">
+				<h1 class="text-4xl md:text-6xl font-bold mb-8 text-primary">
+					Full Stack Developer & Problem Solver
+				</h1>
+				<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+					<a
+						href="#projects"
+						class="btn btn-primary"
+					>
+						View Projects
+					</a>
+					<a
+						href="#contact"
+						class="btn btn-outline"
+					>
+						Contact Me
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects" class="py-16 space-y-12 container mx-auto px-4">
+			{featuredProjects.length > 0 && (
+				<div class="space-y-8">
+					<h2 class="text-3xl font-bold text-center">Featured Projects</h2>
+					<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+						{featuredProjects.map((project: Project) => (
+							<Card
+								title={project.title}
+								description={project.description}
+								status={project.status}
+								liveUrl={project.liveUrl}
+								sourceUrl={project.sourceUrl}
+								technologies={project.technologies}
+								image={project.image}
+							/>
+						))}
+					</div>
+				</div>
+			)}
+
+			{otherProjects.length > 0 && (
+				<div class="space-y-8">
+					<h2 class="text-3xl font-bold text-center">Other Projects</h2>
+					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+						{otherProjects.map((project: Project) => (
+							<ProjectCard
+								title={project.title}
+								description={project.description}
+								status={project.status}
+								liveUrl={project.liveUrl}
+								sourceUrl={project.sourceUrl}
+								technologies={project.technologies}
+								image={project.image}
+							/>
+						))}
+					</div>
+				</div>
+			)}
+		</section>
+
+		<section id="contact" class="py-16 space-y-8">
+			<div class="text-center">
+				<h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+				<p class="text-xl text-foreground/80 max-w-2xl mx-auto">
+					Interested in working together? Let's connect!
+				</p>
+				<div class="mt-8">
+					<a 
+						href="mailto:your.email@example.com" 
+						class="btn"
+					>
+						Send me an email
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
 </Layout>
+
+<style>
+	.text-gradient {
+		background-image: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+</style>

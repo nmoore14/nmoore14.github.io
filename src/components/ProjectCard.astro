@@ -1,0 +1,261 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  status: 'live' | 'in-progress' | 'archived';
+  liveUrl?: string | null;
+  sourceUrl?: string | null;
+  technologies: string[];
+  image?: string | null;
+}
+
+const { 
+  title, 
+  description,
+  status,
+  liveUrl,
+  sourceUrl,
+  technologies,
+  image
+} = Astro.props;
+---
+
+<div class="project-card">
+  <div class="card-content">
+    <div class="icon-container">
+      {image ? (
+        <img src={image} alt={title} class="project-image" />
+      ) : (
+        <div class="icon-placeholder">
+          <div class="floating-elements">
+            <div class="chat-bubble"></div>
+            <div class="chat-bubble-alt"></div>
+            <div class="dot-grid"></div>
+          </div>
+          <span class="icon-text">{title.charAt(0)}</span>
+        </div>
+      )}
+    </div>
+    
+    <div class="text-content">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </div>
+
+    <div class="tech-stack">
+      {technologies.map(tech => (
+        <span class="tech-badge">{tech}</span>
+      ))}
+    </div>
+
+    <div class="actions">
+      {liveUrl && liveUrl !== null && (
+        <a href={liveUrl} class="action-button primary" target="_blank" rel="noopener noreferrer">
+          View Project
+        </a>
+      )}
+      {sourceUrl && sourceUrl !== null && (
+        <a href={sourceUrl} class="action-button" target="_blank" rel="noopener noreferrer">
+          Source
+        </a>
+      )}
+    </div>
+  </div>
+</div>
+
+<style>
+  .project-card {
+    position: relative;
+    background: linear-gradient(135deg, 
+      hsl(var(--secondary) / 0.1),
+      hsl(var(--accent) / 0.1)
+    );
+    border-radius: 24px;
+    padding: 2px;
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    background: linear-gradient(135deg, 
+      hsl(var(--secondary) / 0.2),
+      hsl(var(--accent) / 0.2)
+    );
+  }
+
+  .card-content {
+    background-color: hsl(var(--background));
+    border-radius: 22px;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .icon-container {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .icon-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+      hsl(var(--primary)),
+      hsl(var(--secondary))
+    );
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .floating-elements {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .chat-bubble {
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    background-color: hsl(var(--accent) / 0.3);
+    border-radius: 6px;
+    top: 20%;
+    left: 15%;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .chat-bubble-alt {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    background-color: hsl(var(--secondary) / 0.3);
+    border-radius: 5px;
+    top: 40%;
+    right: 15%;
+    animation: float 3s ease-in-out infinite 1.5s;
+  }
+
+  .dot-grid {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+  }
+
+  .dot-grid::before,
+  .dot-grid::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: hsl(var(--primary-foreground) / 0.5);
+    border-radius: 50%;
+  }
+
+  .icon-text {
+    color: hsl(var(--primary-foreground));
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 1;
+  }
+
+  .text-content {
+    flex: 1;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(135deg, 
+      hsl(var(--primary)),
+      hsl(var(--secondary))
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  p {
+    margin: 0.5rem 0 0;
+    font-size: 0.875rem;
+    color: hsl(var(--foreground) / 0.8);
+    line-height: 1.5;
+  }
+
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+
+  .tech-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    background-color: hsl(var(--secondary) / 0.1);
+    color: hsl(var(--secondary));
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .action-button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    flex: 1;
+    text-align: center;
+    border: 2px solid transparent;
+  }
+
+  .action-button.primary {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  .action-button:not(.primary) {
+    background-color: transparent;
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
+  }
+
+  .action-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+</style> 

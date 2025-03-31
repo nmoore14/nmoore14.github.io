@@ -1,4 +1,60 @@
-# Astro Starter Kit: Basics
+# Nick Moore's Personal Website
+
+A modern, developer-focused personal website built with Astro, Svelte, TypeScript, and TailwindCSS.
+
+## 🚀 Features
+
+- Modern, responsive design
+- Dark mode support
+- Built with Astro for optimal performance
+- Svelte components for interactive elements
+- TypeScript for type safety
+- TailwindCSS for styling
+- Optimized for GitHub Pages deployment
+
+## 🛠️ Tech Stack
+
+- [Astro](https://astro.build) - Static Site Generator
+- [Svelte](https://svelte.dev) - Component Framework
+- [TypeScript](https://www.typescriptlang.org) - Type Safety
+- [TailwindCSS](https://tailwindcss.com) - Utility-First CSS Framework
+
+## 🏗️ Development
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/vibe-personal-site.git
+   cd vibe-personal-site
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## 🚀 Deployment
+
+This site is configured for deployment on GitHub Pages. To deploy:
+
+1. Push your changes to GitHub
+2. Enable GitHub Pages in your repository settings
+3. Set the source to the `gh-pages` branch
+
+The site will be available at `https://yourusername.github.io/vibe-personal-site`
+
+## 📝 License
+
+MIT License - feel free to use this code for your own projects!
 
 ```sh
 npm create astro@latest -- --template basics

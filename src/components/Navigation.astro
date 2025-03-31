@@ -1,0 +1,42 @@
+---
+import ThemeToggle from './ThemeToggle.svelte';
+
+const navItems = [
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
+];
+---
+
+<nav class="nav-container">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="text-xl font-bold" style="color: hsl(var(--primary));">
+        NM
+      </a>
+      <div class="flex items-center space-x-6">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class="nav-link"
+          >
+            {item.label}
+          </a>
+        ))}
+        <ThemeToggle client:load />
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: hsl(var(--background));
+    border-bottom: 1px solid hsl(var(--secondary) / 0.2);
+    backdrop-filter: blur(8px);
+  }
+</style> 
