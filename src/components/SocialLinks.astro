@@ -47,6 +47,12 @@ const { class: className, variant = 'default' } = Astro.props;
 </div>
 
 <style>
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
   .social-links {
     display: flex;
     gap: 1.5rem;
@@ -82,19 +88,12 @@ const { class: className, variant = 'default' } = Astro.props;
     z-index: calc(3 - var(--order));
     position: relative;
     overflow: hidden;
-  }
-
-  .social-link-chaotic::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
+    background-size: 200% 200%;
   }
 
   .social-links-chaotic:hover .social-link-chaotic {
     margin-left: 0;
+    animation: gradient 3s ease infinite;
   }
 
   .social-link-chaotic:hover {
@@ -102,38 +101,34 @@ const { class: className, variant = 'default' } = Astro.props;
     z-index: 10;
   }
 
-  .social-link-chaotic:hover::before {
-    opacity: 1;
-  }
-
   .social-link-chaotic.linkedin {
     --rotation: -5deg;
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    background: linear-gradient(45deg, 
+      hsl(var(--primary)) 0%,
+      hsl(var(--secondary)) 50%,
+      hsl(var(--accent)) 100%
+    );
     color: hsl(var(--background));
-  }
-
-  .social-link-chaotic.linkedin::before {
-    background: linear-gradient(315deg, hsl(var(--primary)), hsl(var(--accent)));
   }
 
   .social-link-chaotic.twitter {
     --rotation: 5deg;
-    background: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--primary)));
+    background: linear-gradient(45deg,
+      hsl(var(--accent)) 0%,
+      hsl(var(--primary)) 50%,
+      hsl(var(--secondary)) 100%
+    );
     color: hsl(var(--background));
-  }
-
-  .social-link-chaotic.twitter::before {
-    background: linear-gradient(315deg, hsl(var(--secondary)), hsl(var(--accent)));
   }
 
   .social-link-chaotic.github {
     --rotation: -3deg;
-    background: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--accent)));
+    background: linear-gradient(45deg,
+      hsl(var(--secondary)) 0%,
+      hsl(var(--accent)) 50%,
+      hsl(var(--primary)) 100%
+    );
     color: hsl(var(--background));
-  }
-
-  .social-link-chaotic.github::before {
-    background: linear-gradient(315deg, hsl(var(--accent)), hsl(var(--primary)));
   }
 
   .social-icon {
