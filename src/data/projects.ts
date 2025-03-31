@@ -27,10 +27,10 @@ export const projects: Project[] = [
     liveUrl: "https://example.com",
     sourceUrl: "https://github.com/username/project-name",
     technologies: ["Astro", "Svelte", "TailwindCSS", "TypeScript"],
-    image: "/images/projects/portfolio.png",
-    featured: true,
+    featured: false,
     sortOrder: 1,
-    updatedAt: new Date().toISOString()
+    updatedAt: new Date().toISOString(),
+    image: null,
   },
   {
     title: "Veteran Assist",

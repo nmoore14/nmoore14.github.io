@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navigation from '../components/Navigation.astro';
 import Card from '../components/Card.astro';
 import ProjectCard from '../components/ProjectCard.astro';
+import SocialLinks from '../components/SocialLinks.astro';
 import { getAllProjects, getFeaturedProjects, type Project } from '../data/projects';
 
 // Get projects data
@@ -29,12 +30,7 @@ const otherProjects: Project[] = getAllProjects().filter(project => !project.fea
 					>
 						View Projects
 					</a>
-					<a
-						href="#contact"
-						class="btn btn-outline"
-					>
-						Contact Me
-					</a>
+					<SocialLinks variant="chaotic" />
 				</div>
 			</div>
 		</section>
@@ -83,15 +79,10 @@ const otherProjects: Project[] = getAllProjects().filter(project => !project.fea
 			<div class="text-center">
 				<h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
 				<p class="text-xl text-foreground/80 max-w-2xl mx-auto">
-					Interested in working together? Let's connect!
+					Let's connect! Find me on any of these platforms:
 				</p>
 				<div class="mt-8">
-					<a 
-						href="mailto:your.email@example.com" 
-						class="btn"
-					>
-						Send me an email
-					</a>
+					<SocialLinks />
 				</div>
 			</div>
 		</section>
