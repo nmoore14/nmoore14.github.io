@@ -21,18 +21,6 @@ export interface Project {
  */
 export const projects: Project[] = [
   {
-    title: "Personal Portfolio Site",
-    description: "A modern personal portfolio built with Astro and Svelte. Features a dark mode toggle, responsive design, and animated project cards.",
-    status: "live",
-    liveUrl: "https://example.com",
-    sourceUrl: "https://github.com/username/project-name",
-    technologies: ["Astro", "Svelte", "TailwindCSS", "TypeScript"],
-    featured: false,
-    sortOrder: 1,
-    updatedAt: new Date().toISOString(),
-    image: null,
-  },
-  {
     title: "Veteran Assist",
     description: "A web application designed to help veterans find local resources including food kitchens, utility assistance, and other support services. Built with AstroJS, TypeScript, and Tailwind CSS.",
     status: "in-progress",
@@ -47,7 +35,7 @@ export const projects: Project[] = [
     image: null,
     updatedAt: new Date().toISOString(),
     featured: true,
-    sortOrder: 2,
+    sortOrder: 1,
   }
 ];
 
